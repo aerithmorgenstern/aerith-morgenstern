@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Page from './components/Page'; // Assuming your component is named Page and the file is named Page.js or Page.jsx
+import Page from './components/page.js';
 
 function App() {
   return (
     <div className='Page'>
-      <Page />
+      <Page/>
     </div>
   );
 }
