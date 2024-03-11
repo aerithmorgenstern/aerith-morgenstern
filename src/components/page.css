@@ -1,0 +1,116 @@
+/* Global styles */
+.image {
+    object-fit: cover;
+    width: 100vw; /* Use vw instead of vh for width */
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(#4E0768, #7F3599);
+}
+
+.hero-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* This should be 'flex-start' */
+    color: white;
+    background: linear-gradient(rgb(70, 6, 93), rgb(132, 54, 146) 100%);
+}
+
+.back-button {
+    height: 50px;
+    width: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute; /* Add position property */
+    top: 83px;
+    left: 22px;
+}
+
+.flash {
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 195px;
+    width: 90%;
+    align-self: center;
+}
+
+.free {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 30px;
+    width: 95%;
+    align-self: center;
+}
+
+.hero-container > h1 {
+    font-size: 100px;
+}
+
+.back-icon {
+    color: rgba(78, 7, 104, 1); /* Change the color */
+    height: 27px;
+    margin-top: 12px;
+    margin-left: -2px;
+}
+
+.logo {
+    position: relative; /* Set position to relative to enable positioning */
+    top: 150px; /* Adjust the top position */
+    width: 220px;
+    align-self: center;
+}
+
+.cookie-image {
+    color: rgba(78, 7, 104, 1); /* Change the color */
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 0;
+}
+
+.countdown-container {
+    position: absolute;
+    top: 405px;
+    right: 90px;
+    padding: 10px;
+    font-size: 35px;
+    color: white; /* Adjust the color as needed */
+}
+
+.remaining-text {
+    align-content: right;
+    display: block;
+    font-size: 12px;
+    margin-top: 5px; /* Add some margin to separate it from the countdown */
+    color: white; /* Adjust the color as needed */
+}
+
+/* Additional styles if needed */
+
+/* Container for the image and overlays */
+.cookie-container {
+    position: relative;
+}
+
+/* Blue overlay */
+.blue-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px; /* Width of the cookie */
+    height: 300px; /* Height of the cookie */
+    background-color: rgba(0, 174, 255); /* Half-transparent blue */
+    transition: height 5s; /* Smooth transition for the height change */
+    z-index: 1; /* Ensure the overlay is above the cookie image */
+}
+
+.cookie-container {
+    position: relative;
+    width: 300px; /* Width of the cookie */
+    height: 300px; /* Height of the cookie */
+}
+
+
+
