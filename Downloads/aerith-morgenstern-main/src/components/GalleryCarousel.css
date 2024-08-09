@@ -1,0 +1,73 @@
+/* Add these styles to make the arrows white */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff; /* Set the desired color, e.g., white */
+}
+
+/* Rest of your existing styles */
+#app {
+  height: 100%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #ffffff;
+  font-family: Helvetica Nefue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper {
+  width: 256px; /* Set the desired width */
+  height: 400px; /* Set the desired height */
+}
+
+.swiper-container-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1000px; /* Set the desired maximum width of the wrapper */
+  margin-top: 52px;
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 850px) {
+  .swiper-container-wrapper {
+    flex-direction: column; /* Stack slides vertically for smaller screens */
+  }
+
+  .mySwiper {
+    width: 256px; /* Set the width to 100% for stacking */
+    margin-bottom: 50px;
+  }
+}
